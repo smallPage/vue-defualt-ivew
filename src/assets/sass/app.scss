@@ -1,0 +1,114 @@
+//自定义样式
+$blue: #1875e7;
+
+#header.transparent-navbar .container {
+  height: 80px;
+}
+
+p {
+    margin-bottom: initial;
+}
+
+[v-cloak] {
+  display: none !important;
+}
+
+.container {
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* css common */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+/* 通用表格样式 */
+
+.filter-btns {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  .ivu-input {
+    border-radius: 32px!important;
+  }
+  .ivu-input-wrapper {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+  .ivu-input {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    line-height: 1.5;
+    padding: 4px 7px;
+    font-size: 12px;
+    border: 1px solid #dddee1;
+    border-radius: 4px;
+    color: #495060;
+    background-color: #fff;
+    background-image: none;
+    position: relative;
+    cursor: text;
+    transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
+  }
+}
+
+.filter-btns .ivu-input-icon-normal+.ivu-input {
+  padding-right: 32px;
+}
+
+.common-table {
+  .ivu-table-header {
+    height: 53px;
+    // line-height: 47px;
+    table {
+      th {
+        background: white;
+      }
+      tr {
+      height: 50px;
+      line-height: 50px;
+      }
+    }
+    .ivu-table-row {
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+}
